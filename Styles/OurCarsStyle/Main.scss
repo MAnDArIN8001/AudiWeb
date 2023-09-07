@@ -23,13 +23,13 @@ body {
   &::-webkit-scrollbar {
     background: none;
 
-    width: 2vw;
+    width: 12px;
   }
 
   &::-webkit-scrollbar-thumb {
     background: white;
 
-    width: 2vw;
+    width: 10px;
 
     border-radius: 5px;
   }
@@ -68,7 +68,7 @@ body {
   }
 }
 
-@media (max-width: 700px) and (min-width: 500px) {
+@media (max-width: 700px) and (min-width: 600px) {
   main.container .card .card_info {
     margin: 0;
   }
@@ -102,9 +102,14 @@ body {
   .burger_instead {
     display: none;
   }
+
+  main.container .card a {
+    display: none;
+  }
+
 }
 
-@media (max-width: 500px) and (min-width: 400px) {
+@media (max-width: 600px) and (min-width: 400px) {
   .models .model .model_info button {
     width: 30vw;
     height: 4vh;
@@ -137,9 +142,9 @@ body {
   main.container .card {
     flex-direction: column;
 
-    gap: 20px;
+    gap: 10px;
 
-    height: 30vh;
+    padding: 10px;
 
     & .card_info {
       display: flex;
@@ -150,8 +155,6 @@ body {
 
     & img {
       width: 60vw;
-
-      margin-top: 10px;
     }
 
     & button {

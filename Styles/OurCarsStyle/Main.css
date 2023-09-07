@@ -138,7 +138,7 @@ main.container .card {
 }
 main.container .card img {
   height: 90%;
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
 main.container .card a {
   transition: 0.3s;
@@ -313,11 +313,11 @@ body {
 }
 body::-webkit-scrollbar {
   background: none;
-  width: 2vw;
+  width: 12px;
 }
 body::-webkit-scrollbar-thumb {
   background: white;
-  width: 2vw;
+  width: 10px;
   border-radius: 5px;
 }
 
@@ -346,7 +346,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.9em;
   }
 }
-@media (max-width: 700px) and (min-width: 500px) {
+@media (max-width: 700px) and (min-width: 600px) {
   main.container .card .card_info {
     margin: 0;
   }
@@ -372,8 +372,11 @@ body::-webkit-scrollbar-thumb {
   .burger_instead {
     display: none;
   }
+  main.container .card a {
+    display: none;
+  }
 }
-@media (max-width: 500px) and (min-width: 400px) {
+@media (max-width: 600px) and (min-width: 400px) {
   .models .model .model_info button {
     width: 30vw;
     height: 4vh;
@@ -398,8 +401,8 @@ body::-webkit-scrollbar-thumb {
   }
   main.container .card {
     flex-direction: column;
-    gap: 20px;
-    height: 30vh;
+    gap: 10px;
+    padding: 10px;
   }
   main.container .card .card_info {
     display: flex;
@@ -408,7 +411,6 @@ body::-webkit-scrollbar-thumb {
   }
   main.container .card img {
     width: 60vw;
-    margin-top: 10px;
   }
   main.container .card button {
     height: 3vh;
